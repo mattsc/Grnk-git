@@ -1,0 +1,26 @@
+1.0.5, 4 Oct 2011:
+- Added workaround in last scenario (Wizards) to make up for AI sometimes ignoring hidden status of Gertburt
+
+1.0.4, 20 Sep 2011:
+- S1: Orcs in south (Sides 5 & 6) can only have a total of 3/4/5 assassins on easy/medium/hard
+- S1: Made sure pillager cannot have intelligent trait (in fact, I simply fix it at dim and strong)
+- S2_04: fixed a couple typos in the dialog
+- Added 'thank you' and URL info before first scenario and in closing credits
+
+1.0.3, 18 Sep 2011:
+- S1: Changes to make the scenario more playable: Gertburt has more gold and fight is taken to castle, not pass; Grnk has more starting units, depending on difficulty level
+- S3: extended turn limit before Faulorn's troops show up by one
+
+1.0.2, 15 Sep 2011:
+Fixes of bugs found by players:
+- S11: put Mal An onto recall list if he gets killed
+- S13: Gertburt gets 'hidden' ability whether he's an Outlaw or Fugitive
+
+1.0.1, 13 Sep 2011:
+Minor bug fixes and wording changes:
+- Made sure Gertburt is healed and has full movement at S9/10 even if player did not go through S5 (also changes to the same effect in other scenarios, just to be on the safe side)
+- S1: Added words for Gertburt: retreat to pass behind the fortress
+- S11: Clarified wording of where Grnk has to go to meet the float
+
+1.0.0, 10 Sep 2011:
+- First post to add-ons server
