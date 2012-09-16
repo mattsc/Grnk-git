@@ -1,3 +1,7 @@
+1.0.6, 16 Sep 2012:
+- S5 Shadows: Added turn limit so that it is not possible any more to get unlimited gold, as reported by some players
+- S7 Disillusion: Karcyn cannot move or attack any more, so that it is not possible to draw him out of the keep and kill him
+
 1.0.5, 4 Oct 2011:
 - Added workaround in last scenario (Wizards) to make up for AI sometimes ignoring hidden status of Gertburt
 
