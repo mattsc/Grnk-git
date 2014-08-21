@@ -21,11 +21,8 @@ function ca_lizards:evaluation(ai)
     }
     if (not units[1]) then return 0 end
 
-    -- Only non-lurkers are considered here
-    local enemies = AH.get_live_units {
-        { "not", { type = "Swamp Lurker" } },
-        { "filter_side", {{"enemy_of", { side = wesnoth.current.side } }} }
-    }
+    -- Only Side 1 units are considered here (that is, no lurkers and mosquitos)
+    local enemies = AH.get_live_units { side = 1 }
 
     -- First, determine how far south to form the line
     -- Default is with y0 = 36, but farther south if enemies have broken through
@@ -167,7 +164,7 @@ function ca_lizards:execution(ai)
         --W.message { speaker = u.id, message = 'My rating map' }
     end
 
-    AH.movefull_outofway_stopunit(ai, best_unit, best_hex)
+    AH.movefull_outofway_stopunit(ai, best_unit, best_hex[1], best_hex[2], { dx = 0, dy = 1 })
 end
 
 return ca_lizards
