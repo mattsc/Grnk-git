@@ -2,7 +2,7 @@ border_size=1
 usage=map
 
 Hhd, Gd, Hhd, Hhd, Hhd, Rd, Rd, Hhd, Hhd, Hhd, Md, Hhd, Hhd, Hhd, Gd, Hhd, Md, Hhd, Hhd, Hhd, Md, Gd, Rd, Gd, Hhd, Hhd, Hhd, Hhd, Hh, Hhd, Hhd, Hh, Hhd, Hh
-Hhd, Gd, Hhd, Hhd, Hhd, Hhd, Gd^Vo, 2 Rd, Rd, Md, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd^Dr, Hhd, Md, Hhd, Hhd, Hhd, Rd, Gd^Es, Hhd, Hhd, Hhd, Gd, Gd, Hh, Hh, Hh, Hh, Hh
+Hhd, Gd, Hhd, Hhd, Hhd, Hhd, Gd^Vo, Rd, Rd, Md, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd^Dr, Hhd, Md, Hhd, Hhd, Hhd, Rd, Gd^Es, Hhd, Hhd, Hhd, Gd, Gd, Hh, Hh, Hh, Hh, Hh
 Md, Hhd, Md, Hhd, Md, Md, Md, Md, Md, Rd, Hhd, Md, Md, Md, Md, Md, Md, Md, Md, Md, Md, Hhd, Rd, Hhd, Hhd, Hhd, Hhd, Md, Hhd, Md, Hh, Md, Hh, Hh
 Md, Hhd, Hhd, Md, Hhd, Md, Hhd, Md, Hhd, Rd, Rd, Md, Md, Md, Hhd, Md, Hhd, Hhd, Hhd, Hhd, Md, Hhd^Vhhr, Rd, Hhd, Gd, Md, Md, Hhd, Md, Hh, Hhd, Hhd, Md, Md
 Md, Md, Md, Hhd, Md, Hhd, Md, Md, Md, Md, Md, Rd, Md, Md, Hhd, Hhd, Ke, Hhd, Hhd, Hhd, Md, Md, Rd, Gd, Md, Md, Hhd, Hh, Hhd, Md, Hh, Hh, Md, Md
@@ -10,7 +10,7 @@ Md, Md, Md, Md, Md, Hhd, Md, Md, Md, Md, Md, Rd, Md, Md, Gd, Ce, Gd, Ce, Gd, Gd,
 Md, Md, Md, Md, Md, Md, Md, Md, Hhd, Md, Md, Rd, Rd, Gd, Rd, Rd, Rd, Rd, Rd, Rd, Gd, Hhd, Hhd, Gd, Hhd, Md, Hh, Hh, Hh, Hh, Mm, Mm, Mm, Md
 Md, Md, Hhd, Md, Md, Md, Md, Hhd, Md, Md, Md, Md, Md, Rd, Gd, Gd, Gd, Gd, Gd, Rd, Gd, Gd, Hhd, Hhd, Hhd, Md, Hh, Md, Mm, Mm, Hh^Fp, Mm, Ww, Ww
 Hhd, Md, Md, Gd, Hhd, Md, Md, Hhd, Hhd, Md, Md, Md, Rd, Rd, Gd, Gd, Gd, Gd, Gd, Rd, Gd, Hhd, Hhd, Gd, Md, Md, Hh, Hh, Mm, Mm, Mm, Ww, Mm, Gg^Efm
-Md, Mv, Md, Md, Md, Md, Md, Md, Hhd, Hhd, 1 Ke, Ce, Gd, Rd, Gd, Gd, Gd, Gd, Gd, Rd, Gd, Hhd, Md, Md, Hh, Gg, Gg, Hh, Wo, Mm, Gg^Efm, Mm, Ms, Ms
+Md, Mv, Md, Md, Md, Md, Md, Md, Hhd, Hhd, Ke, Ce, Gd, Rd, Gd, Gd, Gd, Gd, Gd, Rd, Gd, Hhd, Md, Md, Hh, Gg, Gg, Hh, Wo, Mm, Gg^Efm, Mm, Ms, Ms
 Md, Md, Md, Md, Md, Md, Md, Md, Hhd, Gd, Hhd, Ce, Ce, Rd, Rd, Gd^Es, Gd, Gd, Gd, Rd, Gd, Gd^Es, Gd^Vhr, Md, Md, Hh, Mm, Hh, Hh, Mm, Hh, Gg, Ms, Ms
 Hhd, Md, Md, Md, Md, Md, Md, Gd^Vo, Hhd, Hhd, Gd, Hhd, Hhd, Gd, Rd, Rd, Rd, Rd, Rd, Rd, Gd, Gd, Gd, Hhd, Gd, Mm, Hh, Mm, Ms, Hh^Fp, Gg^Efm, Ms, Mm, Mm
 Hhd, Md, Hhd, Md, Md, Hhd, Hhd, Md, Hhd, Gd, Gd, Hhd, Rd, Rd, Gd, Rd, Gd, Hhd, Hhd, Rd, Rd, Gd, Gd, Gs, Gs, Hh, Hh, Ms, Ww, Ms, Ms, Ms, Ms, Mm
