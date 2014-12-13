@@ -61,55 +61,55 @@ function wesnoth.wml_actions.adjust_facing(cfg)
     -- speaker_only=true can be set to only change the facing of the speaker
 
     -- The following is my code from ai_helper; don't want to include all of ai_helper here
-	local function cartesian_coords(x, y)
-		-- Converts coordinates from hex geometry to cartesian coordinates,
-		-- meaning that y coordinates are offset by 0.5 every other hex
-		-- Example: (1,1) stays (1,1) and (3,1) remains (3,1), but (2,1) -> (2,1.5) etc.
-		return x, y + ((x + 1) % 2) / 2.
-	end
+    local function cartesian_coords(x, y)
+        -- Converts coordinates from hex geometry to cartesian coordinates,
+        -- meaning that y coordinates are offset by 0.5 every other hex
+        -- Example: (1,1) stays (1,1) and (3,1) remains (3,1), but (2,1) -> (2,1.5) etc.
+        return x, y + ((x + 1) % 2) / 2.
+    end
 
-	local function get_angle(from_hex, to_hex)
-		-- Returns the angle of the direction from @from_hex to @to_hex
-		-- Angle is in radians and goes from -pi to pi.  0 is toward east.
-		-- Input hex tables can be of form { x, y } or { x = x, y = y }, which
-		-- means that it is also possible to pass a unit table
-		local x1, y1 = from_hex.x or from_hex[1], from_hex.y or from_hex[2]
-		local x2, y2 = to_hex.x or to_hex[1], to_hex.y or to_hex[2]
+    local function get_angle(from_hex, to_hex)
+        -- Returns the angle of the direction from @from_hex to @to_hex
+        -- Angle is in radians and goes from -pi to pi.  0 is toward east.
+        -- Input hex tables can be of form { x, y } or { x = x, y = y }, which
+        -- means that it is also possible to pass a unit table
+        local x1, y1 = from_hex.x or from_hex[1], from_hex.y or from_hex[2]
+        local x2, y2 = to_hex.x or to_hex[1], to_hex.y or to_hex[2]
 
-		local _, y1cart =  cartesian_coords(x1, y1)
-		local _, y2cart =  cartesian_coords(x2, y2)
+        local _, y1cart =  cartesian_coords(x1, y1)
+        local _, y2cart =  cartesian_coords(x2, y2)
 
-		return math.atan2(y2cart - y1cart, x2 - x1)
-	end
+        return math.atan2(y2cart - y1cart, x2 - x1)
+    end
 
-	local function get_direction_index(from_hex, to_hex, n, center_on_east)
-		-- Returns an integer index for the direction from @from_hex to @to_hex
-		-- with the full circle divided into @n slices
-		-- 1 is always to the east, with indices increasing clockwise
-		-- Input hex tables can be of form { x, y } or { x = x, y = y }, which
-		-- means that it is also possible to pass a unit table
-		--
-		-- Optional input:
-		-- @center_on_east (false): boolean.  By default, the eastern direction is the
-		-- northern border of the first slice.  If this parameter is set, east will
-		-- instead be the center direction of the first slice
+    local function get_direction_index(from_hex, to_hex, n, center_on_east)
+        -- Returns an integer index for the direction from @from_hex to @to_hex
+        -- with the full circle divided into @n slices
+        -- 1 is always to the east, with indices increasing clockwise
+        -- Input hex tables can be of form { x, y } or { x = x, y = y }, which
+        -- means that it is also possible to pass a unit table
+        --
+        -- Optional input:
+        -- @center_on_east (false): boolean.  By default, the eastern direction is the
+        -- northern border of the first slice.  If this parameter is set, east will
+        -- instead be the center direction of the first slice
 
-		local d_east = 0
-		if center_on_east then d_east = 0.5 end
+        local d_east = 0
+        if center_on_east then d_east = 0.5 end
 
-		local angle = get_angle(from_hex, to_hex)
-		local index = math.floor((angle / math.pi * n/2 + d_east) % n ) + 1
+        local angle = get_angle(from_hex, to_hex)
+        local index = math.floor((angle / math.pi * n/2 + d_east) % n ) + 1
 
-		return index
-	end
+        return index
+    end
 
-	function get_hex_facing(from_hex, to_hex)
-		local dirs = { "se", "s", "sw", "nw", "n", "ne" }
-		local index = get_direction_index(from_hex, to_hex, 6)
-		local index2 = (index + 3) % 6
-		if (index2 == 0) then index2 = 6 end
-		return dirs[index], dirs[index2]
-	end
+    function get_hex_facing(from_hex, to_hex)
+        local dirs = { "se", "s", "sw", "nw", "n", "ne" }
+        local index = get_direction_index(from_hex, to_hex, 6)
+        local index2 = (index + 3) % 6
+        if (index2 == 0) then index2 = 6 end
+        return dirs[index], dirs[index2]
+    end
 
     -- In principle, 'facing' can be modified directly.  However, that only
     -- updates the unit parameters, not the display on the map.
