@@ -21,8 +21,8 @@ function ca_lizards:evaluation(ai)
     }
     if (not units[1]) then return 0 end
 
-    -- Only Side 1 units are considered here (that is, no lurkers and mosquitos)
-    local enemies = AH.get_live_units { side = 1 }
+    -- Only Side 3 units are considered here (that is, no lurkers and mosquitos)
+    local enemies = AH.get_live_units { side = 3 }
 
     -- First, determine how far south to form the line
     -- Default is with y0 = 36, but farther south if enemies have broken through
@@ -35,8 +35,8 @@ function ca_lizards:evaluation(ai)
         --print(y0)
     end
     -- But don't go arbitrarily far south
-    if (wesnoth.current.side == 2) and (y0 > 49) then y0 = 49 end
-    if (wesnoth.current.side == 3) and (y0 > 44) then y0 = 44 end
+    if (wesnoth.current.side == 1) and (y0 > 49) then y0 = 49 end
+    if (wesnoth.current.side == 2) and (y0 > 44) then y0 = 44 end
     --print('Forming line with y0 = ', y0)
 
     -- Now find all the enemies that are no more than 4 hexes north of the line
@@ -121,10 +121,10 @@ function ca_lizards:execution(ai)
             -- Needs to be changed (or generalized) if used elsewhere
 
             -- The AI's keep location
-            local x1, y1 = 24, 38  -- Side 2 keep
-            if (wesnoth.current.side == 3) then x1, y1 = 12, 39 end  -- Side 3 keep
+            local x1, y1 = 24, 38  -- Side 1 keep
+            if (wesnoth.current.side == 2) then x1, y1 = 12, 39 end  -- Side 2 keep
 
-            local x2, y2 = 14, 3  -- Side 1 keep (Vanak/Grnk)
+            local x2, y2 = 18, 13  -- Side 3 keep (Vanak/Grnk)
 
             -- y_dist is the distance from the line y = y0 - 0.5 * x
             local y_dist = y - math.ceil(y0 - 0.5 * x)
