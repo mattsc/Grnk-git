@@ -7,15 +7,31 @@ github. The complete change history can be viewed there.
 
 Part 1:
 - Code updated for BfW 1.12. Support for previous versions has been dropped.
-- Prose updated to be consistent with Part 2. Most of this is minor, no
-  significant changes to the overall story. Many other prose fixes, updates and
-  changes for a variety of reasons, but also all minor as far as the overall
-  story is concerned.
+- Prose updated for a variety of reasons:
+  - Consistency with the new Part 2 of the campaign
+  - Clarifications of objectives etc.
+  - Fixes for typos, clarity, story/prose improvements
+  - Most of these are minor, no significant changes to the overall story
 - Changed difficulty descriptions to indicate that this is not an easy campaign.
 - Prevent Sergeant/Lieutenant/General line from advancing to Grand Marshal.
 - Pickpocketing: do not let success probability fall below 30%.
 - Grnk the Rouser: add a ranged attack plus an AMLA for it.
+- P1S1 Flight:
+  - Adjust map and starting positions of orcs so that Grnk cannot sneak by
+- P1S2 Shmaltupp:
+  - Fix Grnk losing double MP upon advancing
+  - Fix wolf costing upkeep
+  - Fix Grnk not being able to attack on first turn on some returns to Shmaltupp
+- P1S3 Treasure:
+  - Relax turn limit
+  - Add right-click option to have Rutburt repeat his plan
+- P1S5 Shadows:
+  - Don't add undead guards in the cave when the draug is killed
+  - Adjust how beacon time areas are removed; hopefully this fixes some of the
+    bugs going along with that.
 - P1S6 Hunting, P1S11 Escape: use MAI for Lurkers
+- P1S7 Disillusion:
+  - Relax turn limit
 
 Part 2: all new!
 
