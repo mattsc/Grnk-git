@@ -3,7 +3,8 @@
 This is only a partial changelog for this version. The big change is the
 addition of Part 2 of the campaign. For Part 1, only changes that are visible to
 the player and which are non-trivial are mentioned. The campaign is now also on
-github. The complete change history can be viewed there.
+github. The complete change history can be viewed there.  Changes to animations,
+etc.
 
 Part 1:
 - Code updated for BfW 1.12. Support for previous versions has been dropped.
@@ -22,6 +23,7 @@ Part 1:
   - Fix Grnk losing double MP upon advancing
   - Fix wolf costing upkeep
   - Fix Grnk not being able to attack on first turn on some returns to Shmaltupp
+  - Fix right-click option only being visible the first time to Shmaltupp
 - P1S3 Treasure:
   - Relax turn limit
   - Add right-click option to have Rutburt repeat his plan
@@ -32,6 +34,10 @@ Part 1:
 - P1S6 Hunting, P1S11 Escape: use MAI for Lurkers
 - P1S7 Disillusion:
   - Relax turn limit
+  - Defeat of saurians is not necessary for victory any more
+- P1S8 Trap:
+  - Set up AI orc sides as allies (so that they do not fight each other)
+  - Make sure message by orc on skeleton recruitment is not skipped
 
 Part 2: all new!
 
