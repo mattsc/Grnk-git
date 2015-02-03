@@ -114,8 +114,19 @@ function wesnoth.wml_actions.adjust_facing(cfg)
     -- In principle, 'facing' can be modified directly.  However, that only
     -- updates the unit parameters, not the display on the map.
     -- Thus, we create a local copy, change that and then place it back on the map.
-    local unit = wesnoth.copy_unit(wesnoth.get_units { id = cfg.id }[1])
-    local second_unit = wesnoth.copy_unit(wesnoth.get_units { id = cfg.second_id }[1])
+    local unit = wesnoth.get_units { id = cfg.id }[1]
+    if (not unit) then
+        wesnoth.message('[adjust_facing]: unit does not exist: id=' .. cfg.id)
+        return
+    end
+    local unit = wesnoth.copy_unit(unit)
+
+    local second_unit = wesnoth.get_units { id = cfg.second_id }[1]
+    if (not second_unit) then
+        wesnoth.message('[adjust_facing]: unit does not exist: second_id=' .. cfg.second_id)
+        return
+    end
+    local second_unit = wesnoth.copy_unit(second_unit)
 
     local facing, second_facing = get_hex_facing({ x = unit.x, y = unit.y }, { x = second_unit.x, y = second_unit.y })
 
