@@ -38,6 +38,11 @@ Part 1:
 - P1S8 Trap:
   - Set up AI orc sides as allies (so that they do not fight each other)
   - Make sure message by orc on skeleton recruitment is not skipped
+- P1S9 Chaos: Increase probability of nothing (no random event) happening
+- Other:
+  - Bug fix: exclude border hexes from FAR_EMPTY_HEX macro results
+  - Bug fix: images placed with HIGHLIGHT_IMAGE_SHORT macro are no longer in
+    front of units
 
 Part 2: all new!
 
