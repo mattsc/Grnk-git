@@ -168,7 +168,7 @@ function ca_peasants_phorhoot:execution(ai)
 
         -- Original rating is simply the cost (in turns) to get there
         -- However, for units that can get there on the same move, we
-        -- actually want the ones farther away to go first.  The
+        -- actually want the ones farther away to go first. The
         -- motivation is that closer units can likely get to other goals too.
         if best_goal_unit then
             local rating = math.ceil(max_rating_unit)

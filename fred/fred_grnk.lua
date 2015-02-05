@@ -958,7 +958,7 @@ return {
             --print_time('retreat')
 
             -- This is a placeholder for when (if) retreat.lua gets adapted to the new
-            -- tables also.  It might not be necessary, it's fast enough the way it is
+            -- tables also. It might not be necessary, it's fast enough the way it is
             local retreat_units = {}
             for id,_ in pairs(zonedata.zone_units_MP) do
                 table.insert(retreat_units, gamedata.unit_copies[id])
@@ -1164,7 +1164,7 @@ return {
                             gamedata, move_cache
                     )
                     --DBG.dbms(combo_def_stat)
-                    --print('   combo ratings:  ', combo_rating, combo_att_rating, combo_def_rating)
+                    --print('   combo ratings: ', combo_rating, combo_att_rating, combo_def_rating)
 
                     -- Don't attack if the leader is involved and has chance to die > 0
                     local do_attack = true
@@ -1349,7 +1349,7 @@ return {
                     table.insert(old_locs, gamedata.my_units[attacker_info.id])
 
                     -- Apply average hitpoints from the forward attack as starting point
-                    -- for the counter attack.  This isn't entirely accurate, but
+                    -- for the counter attack. This isn't entirely accurate, but
                     -- doing it correctly is too expensive, and this is better than doing nothing.
                     table.insert(old_HP_attackers, gamedata.unit_infos[attacker_info.id].hitpoints)
 
@@ -1898,14 +1898,14 @@ return {
 
                 -- The following are some tests to make sure the intended move is actually
                 -- possible, as there might have been some interference with units moving
-                -- out of the way.  It is also possible that units that are supposed to
-                -- move out of the way cannot actually do so in practice.  Abandon the move
+                -- out of the way. It is also possible that units that are supposed to
+                -- move out of the way cannot actually do so in practice. Abandon the move
                 -- and reevaluate in that case. However, we can only do this if the gamestate
                 -- has actually be changed already, or the CA will be blacklisted
                 if gamestate_changed then
                     -- It's possible that one of the units got moved out of the way
                     -- by a move of a previous unit and that it cannot reach the dst
-                    -- hex any more.  In that case we stop and reevaluate.
+                    -- hex any more. In that case we stop and reevaluate.
                     -- TODO: make sure up front that move combination is possible
                     local _,cost = wesnoth.find_path(unit, dst[1], dst[2])
                     if (cost > unit.moves) then

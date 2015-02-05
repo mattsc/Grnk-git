@@ -70,7 +70,7 @@ function wesnoth.wml_actions.adjust_facing(cfg)
 
     local function get_angle(from_hex, to_hex)
         -- Returns the angle of the direction from @from_hex to @to_hex
-        -- Angle is in radians and goes from -pi to pi.  0 is toward east.
+        -- Angle is in radians and goes from -pi to pi. 0 is toward east.
         -- Input hex tables can be of form { x, y } or { x = x, y = y }, which
         -- means that it is also possible to pass a unit table
         local x1, y1 = from_hex.x or from_hex[1], from_hex.y or from_hex[2]
@@ -90,8 +90,8 @@ function wesnoth.wml_actions.adjust_facing(cfg)
         -- means that it is also possible to pass a unit table
         --
         -- Optional input:
-        -- @center_on_east (false): boolean.  By default, the eastern direction is the
-        -- northern border of the first slice.  If this parameter is set, east will
+        -- @center_on_east (false): boolean. By default, the eastern direction is the
+        -- northern border of the first slice. If this parameter is set, east will
         -- instead be the center direction of the first slice
 
         local d_east = 0
@@ -111,7 +111,7 @@ function wesnoth.wml_actions.adjust_facing(cfg)
         return dirs[index], dirs[index2]
     end
 
-    -- In principle, 'facing' can be modified directly.  However, that only
+    -- In principle, 'facing' can be modified directly. However, that only
     -- updates the unit parameters, not the display on the map.
     -- Thus, we create a local copy, change that and then place it back on the map.
     local unit = wesnoth.get_units { id = cfg.id }[1]

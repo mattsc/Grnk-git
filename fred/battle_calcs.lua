@@ -535,7 +535,7 @@ function battle_calcs.print_coefficients()
 
             -- The first indices of coeffs are the possible number of hits the attacker can land on the defender
             for hits = 0,#coeffs do
-                local hit_prob = 0.  -- probability for this number of hits
+                local hit_prob = 0. -- probability for this number of hits
                 local str = ''  -- output string
 
                 local combs = coeffs[hits]  -- the combinations of coefficients to be evaluated
@@ -566,7 +566,7 @@ function battle_calcs.print_coefficients()
                 local skip_str = ''
                 if combs.skip then skip_str = ' (skip)' end
 
-                print(hits .. skip_str .. ':  ' .. str)
+                print(hits .. skip_str .. ': ' .. str)
                 print('      = ' .. hit_prob)
             end
         end
@@ -589,7 +589,7 @@ function battle_calcs.hp_distribution(coeffs, att_hit_prob, def_hit_prob, starti
         if coeffs[hits].skip then
             skip_hp = hp
         else
-            local hp_prob = 0.  -- probability for this number of hits
+            local hp_prob = 0. -- probability for this number of hits
             for _,exp in ipairs(coeffs[hits]) do  -- exp: exponents (and factor) for a set
                 local prob = exp.num  -- probability for this set
                 if exp.am then prob = prob * (1 - att_hit_prob) ^ exp.am end
@@ -645,7 +645,7 @@ function battle_calcs.battle_outcome(attacker, defender, dst, cfg, cache, cache_
     --   - 1. This is different from the other cache tables used in this file
     --   -    This table may only persist for this move (move, not turn !!!), as otherwise too many things change
     --   - 2. The starting HP of the units are part of the cache index and do not have to be saved
-    --   - 3. Caching is done by the defense of the terrain, not the location itself.  As a result:
+    --   - 3. Caching is done by the defense of the terrain, not the location itself. As a result:
     --   - 4. Things like leadership, illumination by other units etc. may or may not be considered correctly
 
     cfg = cfg or {}
@@ -886,7 +886,7 @@ function battle_calcs.attack_rating(attackers_in, defender, dsts_in, att_stats_i
             defender, attackers[1],  { defender.x, defender.y }, def_stats, att_stats[1], cfg
         )
 
-    -- Now we add some extra ratings.  They are positive for attacks that should be preferred
+    -- Now we add some extra ratings. They are positive for attacks that should be preferred
     -- and expressed in fraction of the defender maximum hitpoints
     -- They should be used to help decide which attack to pick,
     -- but not for, e.g., evaluating counter attacks (which should be entirely damage based)
@@ -968,9 +968,9 @@ function battle_calcs.attack_combo_eval(tmp_attackers, tmp_dsts, defender, cache
     --   - 1. This is different from the other cache tables used in this file
     --   -    This table may only persist for this move (move, not turn !!!), as otherwise too many things change
     --   - 2. The starting HP of the units are part of the cache index and do not have to be saved
-    --   - 3. Caching is done by the defense of the terrain, not the location itself.  As a result:
+    --   - 3. Caching is done by the defense of the terrain, not the location itself. As a result:
     --   - 4. Things like leadership, illumination by other units etc. may or may not be considered correctly
-    --   - 5. Only the attack combo stats are cached here.  The single attack stats needed at the
+    --   - 5. Only the attack combo stats are cached here. The single attack stats needed at the
     --        beginning are left to be cached by battle_outcome()
     --
 
@@ -1146,7 +1146,7 @@ function battle_calcs.get_attack_map_unit(unit, cfg)
 end
 
 function battle_calcs.get_attack_map(units, cfg)
-    -- Get all hexes that @units can attack.  This is really just a wrapper
+    -- Get all hexes that @units can attack. This is really just a wrapper
     -- function for battle_calcs.get_attack_map_unit()
     -- Return value is a location set, where the values are tables, containing
     --   - units: the number of units (always 1 for this function)
@@ -1566,7 +1566,7 @@ end
 function battle_calcs.approx_best_attack_combo(attackers, defender, cache, cache_this_move)
     -- Goes through all attack combinations of @attackers on @defender and
     -- makes an estimate of which one of those is the best (largest sum of individual
-    -- attack ratings).  This is mostly set up to be fast.
+    -- attack ratings). This is mostly set up to be fast.
     --
     -- Optional inputs: @cache and @cache_this_move as used by battle_calcs.attack_rating()
 
