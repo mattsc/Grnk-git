@@ -39,6 +39,12 @@ Part 1:
   - Set up AI orc sides as allies (so that they do not fight each other)
   - Make sure message by orc on skeleton recruitment is not skipped
 - P1S9 Chaos: Increase probability of nothing (no random event) happening
+- P1S11 Escape: make sure Mal An can never die for real (avoiding bugs in
+  follow-up scenarios that way)
+- P1S13 Wizards:
+  - Gryphons now never attack Mal An, preventing potential balance problems by
+    them getting rid of him too early
+  - Fix bugs with objectives not always changing correctly
 - Other:
   - Bug fix: exclude border hexes from FAR_EMPTY_HEX macro results
   - Bug fix: images placed with HIGHLIGHT_IMAGE_SHORT macro are no longer in
