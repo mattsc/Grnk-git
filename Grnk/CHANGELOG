@@ -1,56 +1,61 @@
------ 1.1.0 -----
+----- 1.1.0, 7 Feb 2015 (port Part 1 to Wesnoth 1.12) -----
 
-This is only a partial changelog for this version. The big change is the
-addition of Part 2 of the campaign. For Part 1, only changes that are visible to
-the player and which are non-trivial are mentioned. The campaign is now also on
-github. The complete change history can be viewed there. Changes to animations,
-etc.
+This is only a partial changelog for this version. A lot of internal changes
+have been made in order to make this version work on Wesnoth 1.12, for cleaning
+up the code or simply because the author decided to do things differently. These
+sort of changes are not listed here. Only changes that are visible to the player
+(and which are non-trivial) are mentioned. The complete change history can be
+viewed in the git commit log (to be put up at github once Part 2 has been
+published).
 
 Part 1:
-- Code updated for BfW 1.12. Support for previous versions has been dropped.
+- Code updated for BfW 1.12. Dropped support of previous Wesnoth versions.
 - Prose updated for a variety of reasons:
-  - Consistency with the new Part 2 of the campaign
+  - Consistency with the new (almost completed) Part 2 of the campaign
   - Clarifications of objectives etc.
   - Fixes for typos, clarity, story/prose improvements
   - Most of these are minor, no significant changes to the overall story
-- Changed difficulty descriptions to indicate that this is not an easy campaign.
-- Prevent Sergeant/Lieutenant/General line from advancing to Grand Marshal.
-- Pickpocketing: do not let success probability fall below 30%.
-- Grnk the Rouser: add a ranged attack plus an AMLA for it.
 - P1S1 Flight:
   - Adjust map and starting positions of orcs so that Grnk cannot sneak by
 - P1S2 Shmaltupp:
-  - Fix Grnk losing double MP upon advancing
-  - Fix wolf costing upkeep
-  - Fix Grnk not being able to attack on first turn on some returns to Shmaltupp
-  - Fix right-click option only being visible the first time to Shmaltupp
+  - Bug fix for Grnk losing double MP upon advancing
+  - Bug fix for wolf costing upkeep
+  - Bug fix for Grnk not being able to attack on first turn on some returns to
+    Shmaltupp
+  - Bug fix for right-click option only being visible first time to Shmaltupp
 - P1S3 Treasure:
   - Relax turn limit
   - Add right-click option to have Rutburt repeat his plan
 - P1S5 Shadows:
   - Don't add undead guards in the cave when the draug is killed
   - Adjust how beacon time areas are removed; hopefully this fixes some of the
-    bugs going along with that.
-- P1S6 Hunting, P1S11 Escape: use MAI for Lurkers
+    bugs previously being present
+- P1S6 Hunting, P1S11 Escape:
+  - Use Micro AI for Lurkers
 - P1S7 Disillusion:
   - Relax turn limit
   - Defeat of saurians is not necessary for victory any more
 - P1S8 Trap:
-  - Set up AI orc sides as allies (so that they do not fight each other)
+  - Set up AI orc sides as each others' allies (so that they do not fight each
+    other)
   - Make sure message by orc on skeleton recruitment is not skipped
-- P1S9 Chaos: Increase probability of nothing (no random event) happening
-- P1S11 Escape: make sure Mal An can never die for real (avoiding bugs in
-  follow-up scenarios that way)
+- P1S9 Chaos:
+  - Increase probability of nothing (no random event) happening
+- P1S11 Escape:
+  - make sure Mal An can never die for real (avoiding bugs in follow-up
+    scenarios that way)
 - P1S13 Wizards:
   - Gryphons now never attack Mal An, preventing potential balance problems by
-    them getting rid of him too early
+    Mal An being defeated too early
   - Fix bugs with objectives not always changing correctly
 - Other:
   - Bug fix: exclude border hexes from FAR_EMPTY_HEX macro results
   - Bug fix: images placed with HIGHLIGHT_IMAGE_SHORT macro are no longer in
     front of units
-
-Part 2: all new!
+  - Change difficulty descriptions to indicate that this is not an easy campaign
+  - Prevent Sergeant/Lieutenant/General line from advancing to Grand Marshal
+  - Pickpocketing: do not let success probability fall below 30%
+  - Grnk the Rouser: add a ranged attack plus an AMLA for it
 
 
 ----- 1.0.7, 3 Dec 2012 -----
