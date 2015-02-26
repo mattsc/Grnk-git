@@ -1,26 +1,26 @@
 border_size=1
 usage=map
 
-Rd, Mm, Mm, Hhd, Mm, Hhd, Mm, Hhd, Hhd, Hhd, Hhd, Hhd, Mm, Hhd, Hhd, Hhd, Rd, Rd, Hhd, Hhd, Hhd, Mm, Mm, Mm, Hhd, Hhd, Hhd, Rd, Hhd, Mm, Mm
+Rd, Mm, Mm, Hhd, Mm, Hhd, Mm, Hhd, Hhd, Hhd, Hhd, Hhd, Mm, Hhd, Hhd, Hhd, Rd, Rd, Hhd, Hhd, Hhd, Md, Md, Md, Hhd, Hhd, Hhd, Rd, Hhd, Mm, Mm
 Rd, Md, Md, Md, Md^Xm, Mm, Md^Xm, Hhd, Gd^Vo, Gd^Fdw, Hhd, Gd^Fdw, Gd^Fdw, Hhd, Rd, Rd, Rd, Rd, Gd^Vhr, Gd, Gd^Fdw, Gd^Fdw, Md, Gd^Fdw, Gd, Gd, Gd^Fdw, Rd, Hhd, Hhd, Md
-Md, Rd, Rd, Md, Hhd, Md^Xm, Md, Gd, Gd, Gd, Gd, Gd, Rd, Rd, Ce, Rd, Ce, Hhd, Gd, Gd, Gd, Gd, Gd^Fdw, Hhd, Gd, Gd^Fdw, Gd^Fdw, Rd, Hhd, Hhd, Md
-Gd^Fdw, Hhd, Rd, Gd^Fdw, Gd^Fdw, Gd^Fdw, Gd^Dr, Gd, Gd, Gd, Md, Rd, Rd, Rd, Ke, Ke, Ce, Gd, Gd, Gd, Gd, Gd, Gd, Gd, Hhd, Gd, Rd, Rd, Gd^Fetd, Hhd, Md
-Gd, Gd, Rd, Rd, Gd^Vo, Gd, Gd, Gd, Gd^Vhr, Gd^Fdw, Rd, Rd, Gd, Ce, Rd, Ce, Rd, Gd, Gd^Fdw, Gd, Md, Gd, Gd, Gd, Gd^Vhr, Gd^Fdw, Rd, Rd, Rd, Rd, Rd
+Md, Rd, Rd, Md, Hhd, Md^Xm, Md, Gd, Gd, Gll, Gd, Gll, Rd, Rd, Ce, Rd, Ce, Hhd, Gd, Gd, Gd, Gd, Gd^Fdw, Hhd, Gd, Gd^Fdw, Gd^Fdw, Rd, Hhd, Hhd, Md
+Gd^Fdw, Hhd, Rd, Gd^Fdw, Gd^Fdw, Gd^Fdw, Gd^Dr, Gd, Gd, Gd, Md, Rd, Rd, Rd, Ke, Ke, Ce, Gd, Gd, Gll, Gd, Gd, Gd, Gd, Hhd, Gd, Rd, Rd, Gd^Fetd, Hhd, Md
+Gd, Gd, Rd, Rd, Gd^Vo, Gd, Gd, Gll, Gd^Vhr, Gd^Fdw, Rd, Rd, Gd, Ce, Rd, Ce, Rd, Gd, Gd^Fdw, Gd, Md, Gd, Gd, Gd, Gd^Vhr, Gd^Fdw, Rd, Rd, Rd, Rd, Rd
 Rd, Rd, Hhd, Gd, Gd, Gd, Gd, Gd, Gd, Gd, Rd, Gd, Gd^Fdw, Gd, Gd, Rd, Rd, Gd, Gd, Hhd, Gd^Fdw, Gd^Fdw, Gd^Fdw, Gd, Rd, Rd, Gd, Gd, Gd, Rd, Md^Xm
-Rd, Gd^Fdw, Md^Xm, Gd^Fdw, Md, Gd, Rd, Rd, Rd, Rd, Gd^Fdw, Md^Xm, Md^Xm, Md^Xm, Hhd, Rd, Gd, Gd, Gd^Es, Gd, Gd^Vhr, Hhd, Gd, Rd, Rd, Rd, Gd, Gd, Hhd, Gd^Fdw, Md^Xm
-Rd, Md, Gd^Fdw, Md^Xm, Hhd, Rd, Gd, Gd, Gd, Gd, Mm, Gd^Fdw, Gd^Fdw, Md^Xm, Hhd, Rd, Gd, Gd, Gd, Gd, Gd, Gd, Rd, Rd, Gd, Gd^Es, Gd, Gd^Fdw, Md^Xm, Md^Xm, Md
-Rd, Gd^Fdw, Gd, Gd, Rd, Rd, Gd^Fdw, Gd^Vhr, Gd, Gd, Hhd, Md^Xm, Gd^Fdw, Gd^Fdw, Hhd^Vhhr, Rd, Hhd, Hhd, Md, Gd^Fetd, Gd, Gd, Rd, Rd, Gd, Gd, Gd, Hhd, Md, Md^Xm, Md
-Gd^Fdw, Rd, Rd, Rd, Gd, Gd, Gd, Gd, Gd, Gd^Es, Gd^Fdw, Md^Xm, Md^Xm, Hhd, Gd, Rd, Rd, Gd^Fdw, Hhd, Hhd, Rd, Rd, Rd, Ce, Ce, Hhd, Gd, Gd, Hhd, Md^Xm, Md^Xm
-Hhd, Rd, Gd^Fdw, Md, Gd^Fdw, Gd, Rd, Gd^Es, Gd, Gd, Md^Xm, Md^Xm, Mm, Gd^Fdw, Gd, Gd, Rd, Rd, Rd, Rd, Md^Xm, Hhd, Gd, Ce, Rd, Gd^Fetd, Rd, Gd^Es, Gd, Gd^Fdw, Gd^Fdw
-Rd, Rd, Rd, Hhd, Rd, Rd, Rd, Gd, Gd, Gd^Fdw, Md^Xm, Md^Xm, Hhd, Gd, Gd, Rd, Gd, Gd, Hhd, Gd, Md^Xm, Md, Gd, Rd, Rd, Rd, Rd, Rd, Rd, Gd, Rd
+Rd, Gd^Fdw, Md^Xm, Gd^Fdw, Md, Gd, Rd, Rd, Rd, Rd, Gd^Fdw, Md^Xm, Md^Xm, Md^Xm, Hhd, Rd, Gd, Gd, Gd^Es, Gll, Gd^Vhr, Hhd, Gd, Rd, Rd, Rd, Gd, Gd, Hhd, Gd^Fdw, Md^Xm
+Rd, Md, Gd^Fdw, Md^Xm, Hhd, Rd, Gd, Gd, Gll, Gd, Mm, Gd^Fdw, Gd^Fdw, Md^Xm, Hhd, Rd, Gd, Gd, Gd, Gd, Gll, Gd, Rd, Rd, Gd, Gd^Es, Gd, Gd^Fdw, Md^Xm, Md^Xm, Md
+Rd, Gd^Fdw, Gd, Gd, Rd, Rd, Gd^Fdw, Gd^Vhr, Gd, Gd, Hhd, Md^Xm, Gd^Fdw, Gd^Fdw, Hhd^Vhhr, Rd, Hhd, Hhd, Md, Gd^Fetd, Gll, Gd, Rd, Rd, Gd, Gd, Gd, Hhd, Md, Md^Xm, Md
+Gd^Fdw, Rd, Rd, Rd, Gd, Gd, Gd, Gd, Gd, Gd^Es, Gd^Fdw, Md^Xm, Md^Xm, Hhd, Gd, Rd, Rd, Gd^Fdw, Hhd, Hhd, Rd, Rd, Rd, Ce, Ce, Hhd, Gll, Gd, Hhd, Md^Xm, Md^Xm
+Hhd, Rd, Gd^Fdw, Md, Gd^Fdw, Gd, Rd, Gd^Es, Gll, Gd, Md^Xm, Md^Xm, Mm, Gd^Fdw, Gll, Gd, Rd, Rd, Rd, Rd, Md^Xm, Hhd, Gd, Ce, Rd, Gd^Fetd, Rd, Gd^Es, Gd, Gd^Fdw, Gd^Fdw
+Rd, Rd, Rd, Hhd, Rd, Rd, Rd, Gd, Gd, Gd^Fdw, Md^Xm, Md^Xm, Hhd, Gll, Gd, Rd, Gd, Gd, Hhd, Gd, Md^Xm, Md, Gd, Rd, Rd, Rd, Rd, Rd, Rd, Gd, Rd
 Gd^Fetd, Gd, Gd, Rd, Rd, Rd, Rd, Rd, Gd, Mm, Md^Xm, Gll^Dr, Rd, Gd, Rd, Rd, Gd, Gd, Md, Md^Xm, Md^Xm, Gd^Fdw, Gd, Gd, Rd, Rd, Gd^Fdw, Hhd, Gd^Fdw, Rd, Hhd
 Md^Xm, Gd^Fdw, Hhd, Gd, Gd, Gd^Fdw, Ce, Ce, Rd, Hhd, Rd, Rd, Hhd, Rd, Rd, Gd, Gd, Gd^Fdw, Md^Xm, Md^Xm, Gd^Fdw, Gd, Gd^Es, Gd, Gd, Gd, Gd, Mm, Rd, Rd, Gd^Fdw
-Md, Md^Xm, Md, Gd, Gd, Hhd, Gd, Ce, Rd, Rd, Gd, Hhd, Md, Gd^Fetd, Hhd, Rd, Gd^Vo, Hhd, Gd^Fdw, Md^Xm, Hhd, Gd, Gd, Gd, Gd^Fdw, Gd, Rd, Rd, Gd, Rd, Rd
+Md, Md^Xm, Md, Gd, Gd, Hhd, Gd, Ce, Rd, Rd, Gd, Hhd, Md, Gd^Fetd, Hhd, Rd, Gd^Vo, Hhd, Gd^Fdw, Md^Xm, Hhd, Gd, Gd, Gd, Gd^Fdw, Gd, Rd, Rd, Gll, Rd, Rd
 Md, Md^Xm, Md^Xm, Hhd, Gd, Gd, Gd, Rd, Rd, Gd, Gd, Gd^Fdw, Gd, Hhd, Gd, Rd, Hhd, Gd^Fdw, Gd^Fdw, Md^Xm, Md, Gd, Gd, Gd^Vo, Gd, Rd, Hhd, Gd, Gd^Fdw, Gd^Fetd, Rd
-Md^Xm, Md^Xm, Hhd, Gd^Fdw, Gd, Gd, Rd, Rd, Gd, Gd, Gd^Vo, Gd, Gd, Gd, Gd, Rd, Hhd, Md^Xm, Md^Xm, Gd^Fdw, Gd^Fdw, Gd, Rd, Gd, Rd, Rd, Md, Md^Xm, Md^Xm, Md, Rd
-Md^Xm, Gd^Fdw, Gd^Es, Gd, Gd, Rd, Rd, Rd, Gd^Fdw, Hhd, Gd^Fdw, Gd, Gd, Gd^Es, Rd, Rd, Gd, Md^Xm, Gd^Fdw, Md^Xm, Rd, Rd, Gd, Rd, Gd, Gd, Gd, Gd^Fdw, Hhd, Gd^Fdw, Rd
-Rd, Rd, Rd, Gd, Rd, Rd, Gd^Vo, Gd, Gd, Gd^Fdw, Mm, Hhd, Gd^Fdw, Gd, Rd, Rd, Rd, Gd, Gd, Gd, Rd, Gd, Gd^Vo, Gd, Gd, Gd, Gd^Vo, Gd, Rd, Rd, Gd
+Md^Xm, Md^Xm, Hhd, Gd^Fdw, Gd, Gd, Rd, Rd, Gd, Gd, Gd^Vo, Gll, Gd, Gd, Gd, Rd, Hhd, Md^Xm, Md^Xm, Gd^Fdw, Gd^Fdw, Gd, Rd, Gd, Rd, Rd, Md, Md^Xm, Md^Xm, Md, Rd
+Md^Xm, Gd^Fdw, Gd^Es, Gd, Gd, Rd, Rd, Rd, Gd^Fdw, Hhd, Gd^Fdw, Gd, Gd, Gd^Es, Rd, Rd, Gd, Md^Xm, Gd^Fdw, Md^Xm, Rd, Rd, Gd, Rd, Gll, Gd, Gd, Gd^Fdw, Hhd, Gd^Fdw, Rd
+Rd, Rd, Rd, Gd, Rd, Rd, Gd^Vo, Gd, Gd, Gd^Fdw, Mm, Hhd, Gd^Fdw, Gd, Rd, Rd, Rd, Gll, Gd, Gd, Rd, Gd, Gd^Vo, Gd, Gd, Gd, Gd^Vo, Gd, Rd, Rd, Gd
 Hhd, Rd, Gd^Fdw, Rd, Rd, Gd^Fdw, Hhd, Gd, Gd, Gd, Gd, Gd, Gd, Gd, Co, Co, Ko, Co, Rd, Rd, Md, Gd^Fdw, Gd^Es, Gd, Gd^Dr, Gd, Gd^Fdw, Rd, Rd, Gd, Gd^Fdw
-Md, Md, Hhd, Rd, Gd^Fdw, Gd^Efm, Gd, Gd, Gd^Fdw, Gd, Gd^Es, Gd, Gd, Gd, Co, Ko, Co, Rd, Rd, Rd, Gd, Gd, Gd, Gd, Gd^Fdw, Gd^Fdw, Hhd, Gd^Fdw, Rd, Hhd, Md
-Md, Hhd, Rd, Rd, Gd^Fdw, Gd^Fdw, Gd, Hhd, Md, Gd, Gd^Fdw, Gd, Gd^Vo, Hhd, Rd, Rd, Rd, Rd, Hhd, Gd, Gd, Gd, Gd^Vo, Gd, Md^Xm, Md^Xm, Md^Xm, Md, Rd, Md, Md
-Md, Hhd, Rd, Gd, Gd, Gd^Fdw, Md, Hhd, Gd^Fdw, Gd^Fdw, Gd, Gd, Rd, Rd, Rd, Rd, Md, Gd^Fdw, Gd^Fdw, Gd^Fdw, Gd^Fdw, Gd^Fetd, Hhd, Hhd, Md^Xm, Md, Md, Md, Md, Rd, Md
+Md, Md, Hhd, Rd, Gd^Fdw, Gd^Efm, Gll, Gd, Gd^Fdw, Gd, Gd^Es, Gd, Gd, Gd, Co, Ko, Co, Rd, Rd, Rd, Gd, Gd, Gd, Gd, Gd^Fdw, Gd^Fdw, Hhd, Gd^Fdw, Rd, Hhd, Md
+Md, Hhd, Rd, Rd, Gd^Fdw, Gd^Fdw, Gd, Hhd, Md, Gll, Gd^Fdw, Gd, Gd^Vo, Hhd, Rd, Rd, Rd, Rd, Hhd, Gd, Gll, Gd, Gd^Vo, Gd, Md^Xm, Md^Xm, Md^Xm, Md, Rd, Md, Md
+Md, Hhd, Rd, Gd, Gd, Gd^Fdw, Md, Hhd, Gd^Fdw, Gd^Fdw, Gll, Gd, Rd, Rd, Rd, Rd, Md, Gd^Fdw, Gd^Fdw, Gd^Fdw, Gd^Fdw, Gd^Fetd, Hhd, Hhd, Md^Xm, Md, Md, Md, Md, Rd, Md
