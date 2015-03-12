@@ -26,12 +26,16 @@ function ca_bottleneck_attack:evaluation(ai, cfg, self)
 
                 local att_stats, def_stats = wesnoth.simulate_combat(attacker, n_weapon, target)
 
+                local attacker_damage = attacker.hitpoints - att_stats.average_hp
+                local target_damage = target.hitpoints - def_stats.average_hp
+
                 local rating
                 -- This is an acceptable attack if:
                 -- 1. There is no counter attack
                 -- 2. Probability of death is >=67% for enemy, 0% for attacker
                 if (att_stats.hp_chance[attacker.hitpoints] == 1)
                     or ((def_stats.hp_chance[0] >= 0.67) and (att_stats.hp_chance[0] == 0))
+                    or ((target_damage >= 2 * attacker_damage) and (att_stats.hp_chance[0] == 0))
                 then
                     rating = target.max_hitpoints + def_stats.hp_chance[0] * 100
                     rating = rating + att_stats.average_hp - def_stats.average_hp
