@@ -1,13 +1,13 @@
 border_size=1
 usage=map
 
-Hh, Gg, Mm, Hh, Mm, Mm^Xm, Mm^Xm, Hh, Ww, Ww, Ww, Ds, Gs, Gg, Gg, Rb^Gvs, Rb^Gvs, Gg, Gs, Gg, Gg, Gg, Ds, Ds, Gs, Wo, Ww, Gg, Gs, Ww, Gs, Gg, Gg, Gg
-Gs^Vc, Mm, Hh, Hh, Hh, Mm, Ms^Xm, Hh, Wo, Wo, Wo, Ds, Gs, Gg, Gs, Rb^Gvs, Gs, Gs, Gs, Gs, Gg, Gg, Ww, Ww, Gg, Wo, Ww, Wo, Gg, Ww, Ww, Gs^Vc, Gg, Gs
-Wo, Gg, Ss, Hh, Hh^Vhh, Ms, Mm^Xm, Mm, Wo, Wo, Ww, Gg, Gg, Gg, Gg, Gg, Gg, Gg, Ds, Gs, Gg, Gs^Vc, Ww, Wo, Wo, Gg, Wo, Ww, Wo, Wo, Wo, Gg, Gg, Gs
+Hh, Gg, Mm, Hh, Mm, Mm^Xm, Mm^Xm, Hh, Ww, Ww, Ww, Ds, Gs, Gg, Gg, Rb^Gvs, Rb^Gvs, Gg, Gs, Gg, Gg, Gg, Ds, Ds, Gs, Wo, Ww, Gg, Gs, Ww, Gg, Gg, Gg, Gg
+Gs^Vc, Mm, Hh, Hh, Hh, Mm, Ms^Xm, Hh, Wo, Wo, Wo, Ds, Gs, Gg, Gs, Rb^Gvs, Gs, Gs, Gs, Gs, Gg, Gg, Ww, Ww, Gg, Wo, Ww, Wo, Gg, Ww, Ww, Gg^Vc, Gg, Gs
+Wo, Gg, Ss, Hh, Hh^Vhh, Ms, Mm^Xm, Mm, Wo, Wo, Ww, Gg, Gg, Gg, Gg, Gg, Gg, Gg, Ds, Gs, Gg, Gg^Vc, Ww, Wo, Wo, Gg, Wo, Ww, Wo, Wo, Wo, Gg, Gg, Gs
 Ss, Wo, Ww, Wo, Ww, Wo, Mm, Mm^Xm, Mm^Xm, Wo, Wo, Gg, Ds, Gg, Gg, Gg, Gs, Gs, Wo, Ds, Wo, Wo, Ww, Wo, Wo, Wo, Wo, Wo, Wo, Ww, Wo, Ww, Wo, Ds
 Gg, Wo, Ww, Ss, Hh, Hh, Mm, Mm, Mm^Xm, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo
 Ss, Ww, Ww, Ss, Mm, Hh, Mm^Xm, Mm^Xm, Hh, Ww, Wo, Hh, Gg, Wo, Gg, Wo, Wo, Wo, Gg, Wo, Wo, Wo, Wo, Wo, Wo, Ww, Ww, Ww, Wo, Wo, Wo, Wo, Wo, Wo
-Hh, Hh, Ww, Gg, Hh, Hh^Vhh, Mm^Xm, Mm, Wo, Wo, Wo, Wo, Ds, Gg, Wo, Wo, Gs, Wo, Gs^Vc, Wo, Wo, Ww, Wo, Ww, Ww, Wo, Ww, Wo, Wo, Wo, Ww, Wo, Wo, Wo
+Hh, Hh, Ww, Gg, Hh, Hh^Vhh, Mm^Xm, Mm, Wo, Wo, Wo, Wo, Ds, Gg, Wo, Wo, Gs, Wo, Gg^Vc, Wo, Wo, Ww, Wo, Ww, Ww, Wo, Ww, Wo, Wo, Wo, Ww, Wo, Wo, Wo
 Mm, Mm, Wo, Hh, Mm, Mm^Xm, Mm, Mm^Xm, Mm^Xm, Wo, Wo, Wo, Hh, Gg, Gg, Gg, Gg, Gs, Gg, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Ww, Gg, Gg, Ww, Ss, Gg
 Mm^Xm, Mm^Xm, Ms^Xm, Wo, Hh, Mm^Xm, Wo, Ms^Xm, Ms^Xm, Gg, Wo, Wo, Wo, Wo, Wo, Gg, Wo, Gg, Wo, Wo, Ww, Ww, Wo, Wo, Wo, Wo, Gg, Ss, Sm, Ss^Vhs, Ww, Ww, Ww, Ss
 Hh, Hh, Ha^Vhha, Ww, Wo, Wo, Ms, Ha, Mm^Xm, Wo, Ww, Ww, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Wo, Ww, Wo, Ww, Ww, Gg, Ss, Ss, Wo, Ss, Ss, Ss, Sm, Ss
