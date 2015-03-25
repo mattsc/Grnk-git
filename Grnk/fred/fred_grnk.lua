@@ -97,10 +97,10 @@ return {
                     local x0 = 27
                     local goal_x, goal_y = 26, 6
                     if (y > 17)  then
-                        x0 = -1.0 * (23 - y) + 20
+                        x0 = -1.0 * (y - 23) + 20
                         goal_x, goal_y = 30, 16
                     elseif (y < 10) then
-                        x0 = 2.0 * (10 - y) + 25
+                        x0 = 2.0 * (y - 10) + 25
                         goal_x, goal_y = 16, 2
                     end
 
@@ -135,10 +135,10 @@ return {
                     local x0 = 11
                     local goal_x, goal_y = 13, 6
                     if (y > 14)  then
-                        x0 = 1.0 * (23 - y) + 20
+                        x0 = 1.0 * (y - 23) + 20
                         goal_x, goal_y = 7, 15
                     elseif (y < 9) then
-                        x0 =  -2.0 * (8 - y) + 11
+                        x0 =  -2.0 * (y - 8) + 11
                         goal_x, goal_y = 22, 2
                     end
 
@@ -1574,7 +1574,7 @@ return {
                     eval_hold, get_villages = true, true
                 end
             end
-            --print('eval_hold 2', eval_hold)
+            --print('eval_hold 3', eval_hold)
 
             if eval_hold then
                 local unit, dst = fred:hold_zone(holders, zonedata, gamedata)
