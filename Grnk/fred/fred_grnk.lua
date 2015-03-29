@@ -328,7 +328,7 @@ return {
                 cfg_right = {
                     zone_id = 'right',
                     key_hexes = { { 27, 11 } },
-                    zone_filter = { x = '4-14', y = '7-23' },
+                    zone_filter = { x = '10-16,4-14', y = '2-6,7-23' },
                     unit_filter = { x = '1-22,1-16', y = '14-23,1-13' },
                     skip_action = { retreat_injured_unsafe = true },
                     hold = { hp_ratio = 1.0, unit_ratio = 1.1 }
@@ -336,7 +336,7 @@ return {
 
                 cfg_rush_right = {
                     zone_id = 'rush_right',
-                    zone_filter = { x = '4-14', y = '7-23' },
+                    zone_filter = { x = '10-16,4-14', y = '2-6,7-23' },
                     only_zone_units = true,
                     unit_filter = { x = '1-22,1-16', y = '14-23,8-13' },
                     skip_action = { retreat_injured_unsafe = true }
