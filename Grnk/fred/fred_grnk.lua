@@ -346,7 +346,8 @@ return {
             local cfg_enemy_leader = {
                 zone_id = 'enemy_leader',
                 zone_filter = { x = '1-' .. width , y = '1-' .. height },
-                unit_filter = { x = '1-' .. width , y = '1-' .. height }
+                unit_filter = { x = '1-' .. width , y = '1-' .. height },
+                attack = { enemy_worth = 3.0 }
             }
 
             local sorted_cfgs = {}
@@ -680,7 +681,7 @@ return {
                 -- advanced in the zone can be gotten to.
                 -- This needs to be separate from and in addition to the step above (if unit cannot get into zone)
 
-                local hp_factor = 1.1
+                local hp_factor = 2.1
 
                 local enemy_hp =
                     gamedata.enemy_attack_map[best_hex[1]]
