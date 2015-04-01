@@ -9,8 +9,8 @@ local stored_y0
 local ca_lizards = {}
 
 function ca_lizards:evaluation(ai)
-    -- Have the AI form a line along y = 36 - 0.5 * x
-    -- if there are no enemies on or south of the line y = 32 - 0.5 * x
+    -- Have the AI form a line along y = 28 - 0.5 * x
+    -- if there are no enemies on or south of the line y = 24 - 0.5 * x
     -- Otherwise we'll let the RCA AI do combat as usual,
     -- but this CA takes over all movement other than combat
 
@@ -32,8 +32,8 @@ function ca_lizards:evaluation(ai)
     local enemies = AH.get_live_units { side = 3 }
 
     -- First, determine how far south to form the line
-    -- Default is with y0 = 36, but farther south if enemies have broken through
-    local y0 = 36
+    -- Default is with y0 = 28, but farther south if enemies have broken through
+    local y0 = 28
     for i,e in ipairs(enemies) do
         -- Is this enemy south of the line?
         local y_dist = e.y - math.ceil(y0 - 0.5 * e.x)
@@ -42,8 +42,8 @@ function ca_lizards:evaluation(ai)
         --print(y0)
     end
     -- But don't go arbitrarily far south
-    if (wesnoth.current.side == 1) and (y0 > 49) then y0 = 49 end
-    if (wesnoth.current.side == 2) and (y0 > 44) then y0 = 44 end
+    if (wesnoth.current.side == 1) and (y0 > 41) then y0 = 41 end
+    if (wesnoth.current.side == 2) and (y0 > 36) then y0 = 36 end
     --print('Forming line with y0 = ', y0)
 
     -- Now find all the enemies that are no more than 4 hexes north of the line
@@ -135,10 +135,10 @@ function ca_lizards:execution(ai)
             -- Needs to be changed (or generalized) if used elsewhere
 
             -- The AI's keep location
-            local x1, y1 = 24, 38  -- Side 1 keep
-            if (wesnoth.current.side == 2) then x1, y1 = 12, 39 end  -- Side 2 keep
+            local x1, y1 = 24, 30  -- Side 1 keep
+            if (wesnoth.current.side == 2) then x1, y1 = 12, 31 end  -- Side 2 keep
 
-            local x2, y2 = 18, 13  -- Side 3 keep (Vanak/Grnk)
+            local x2, y2 = 14, 3  -- Side 3 keep (Vanak/Grnk)
 
             -- y_dist is the distance from the line y = y0 - 0.5 * x
             local y_dist = y - math.ceil(y0 - 0.5 * x)
