@@ -16,9 +16,16 @@ function ca_lizards:evaluation(ai)
 
     --print('---- Evaluating hold_area ----')
 
-    local units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',
-        formula = '$this_unit.moves > 0'
-    }
+    local units
+    if wesnoth.get_variable('S') and wesnoth.get_variable('S.include_leader_S' .. wesnoth.current.side) then
+        units = wesnoth.get_units { side = wesnoth.current.side,
+            formula = '$this_unit.moves > 0'
+        }
+    else
+        units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',
+            formula = '$this_unit.moves > 0'
+        }
+    end
     if (not units[1]) then return 0 end
 
     -- Only Side 3 units are considered here (that is, no lurkers and mosquitos)
@@ -88,9 +95,16 @@ end
 function ca_lizards:execution(ai)
     --print('---- Executing hold_area ----')
 
-    local units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',
-        formula = '$this_unit.moves > 0'
-    }
+    local units
+    if wesnoth.get_variable('S') and wesnoth.get_variable('S.include_leader_S' .. wesnoth.current.side) then
+        units = wesnoth.get_units { side = wesnoth.current.side,
+            formula = '$this_unit.moves > 0'
+        }
+    else
+        units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',
+            formula = '$this_unit.moves > 0'
+        }
+    end
 
     local y0 = stored_y0
     --print('Forming line with y0 = ', y0)
