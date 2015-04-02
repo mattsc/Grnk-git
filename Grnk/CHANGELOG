@@ -1,3 +1,21 @@
+----- 1.2.0, ? XXX 2015 (release of first half of Part 2) -----
+
+Part 1:
+- P1S3 Treasure:
+  - Immobilize Faulorn himself also until Rutburt is discovered
+- P1S4 Mercenaries:
+  - Remove work-around for a Wesnoth bug fix (gold in recruit event)
+- Prunes:
+  - Weaken initial prunes effects for consistency with Part 2
+- Other:
+  - Fix some spelling errors as pointed out by players in the forum thread
+  - Minor changes to several maps: village base terrain and for consistency
+  - Some internal changes, mostly for consistency with Part 2
+  - Add version requirement to campaign menu entry
+
+Part 2: New scenarios 1 to 8
+
+
 ----- 1.1.0, 7 Feb 2015 (port Part 1 to Wesnoth 1.12) -----
 
 This is only a partial changelog for this version. A lot of internal changes
