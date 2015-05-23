@@ -1,3 +1,16 @@
+----- 2.0.1, xx May 2015 (maintenance update) -----
+
+Part 1:
+- P1S2 Shmaltupp: fix Grnk's personal gold not being displayed at scenario start
+- P1S3 Treasure: keep Faulorn on his keep also after Grnk is discovered
+- Lots of minor changes to dialog, movements and facings of units, information
+  displayed in status table, etc.
+- Internal changes to code as found by wmllint
+
+Part 2:
+- Update the scenario number in the menu from 15 to 16
+
+
 ----- 2.0.0, 10 May 2015 (release of Part 2) -----
 
 Part 1:
