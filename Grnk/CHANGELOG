@@ -3,6 +3,9 @@
 Part 1:
 - P1S2 Shmaltupp: fix Grnk's personal gold not being displayed at scenario start
 - P1S3 Treasure: keep Faulorn on his keep also after Grnk is discovered
+- P1S7 Disillusion: fix Grnk falsely triggering Vadak to come back out
+- P1S8 Trap: match type of wolf running away to Grnk's level
+- Healing potion: only show menu item on Grnk's side's turn
 - Lots of minor changes to dialog, movements and facings of units, information
   displayed in status table, etc.
 - Internal changes to code as found by wmllint
