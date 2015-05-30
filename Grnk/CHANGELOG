@@ -1,13 +1,31 @@
------ 2.0.1, xx May 2015 (maintenance update) -----
+----- 2.0.1, 30 May 2015 -----
 
 Part 1:
-- P1S2 Shmaltupp: fix Grnk's personal gold not being displayed at scenario start
+- P1S2 Shmaltupp:
+  - Fix Grnk's personal gold not being displayed at scenario start
+  - Add workaround for engine bug/feature that causes OOS errors in replays
 - P1S3 Treasure: keep Faulorn on his keep also after Grnk is discovered
-- P1S7 Disillusion: fix Grnk falsely triggering Vadak to come back out
-- P1S8 Trap: match type of wolf running away to Grnk's level
+- P1S7 Disillusion:
+  - Add workaround for engine bug that causes OOS errors in replays
+  - Fix Grnk falsely triggering Vadak to come back out
+- P1S8 Trap:
+  - Give Karcyn some starting villages
+  - Match type of wolf running away to Grnk's level
+- P1S9 Chaos: fix fog not being reset correctly from previous chaotic event
+- P1S11 Escape: keep Mal An from ever moving
+- P1S12 Prunes:
+  - Ensure skeletons start arriving no later than turn 2
+  - Make prune cart loyal
+- P1S13 Wizards:
+  - Add workaround for engine bug that causes OOS errors in replays
+  - Remove driver image from prune cart when driver steps off
+  - Change schedule by one to sync better with Grnk's arrival
+  - Make Stonehand not complain in die event if he is allied with Grnk by then
+  - Fix gold for Mal An at scenario start
 - Healing potion: only show menu item on Grnk's side's turn
 - Lots of minor changes to dialog, movements and facings of units, information
   displayed in status table, etc.
+- Adjust [ai] tags in all scenarios to values that make more sense
 - Internal changes to code as found by wmllint
 
 Part 2:
