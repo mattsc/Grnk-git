@@ -104,11 +104,21 @@ function wesnoth.wml_actions.adjust_facing(cfg)
     end
 
     function get_hex_facing(from_hex, to_hex)
-        local dirs = { "se", "s", "sw", "nw", "n", "ne" }
-        local index = get_direction_index(from_hex, to_hex, 6)
-        local index2 = (index + 3) % 6
-        if (index2 == 0) then index2 = 6 end
-        return dirs[index], dirs[index2]
+        local dirs = { 'se', 'sw', 'nw', 'ne' }
+
+        local index = get_direction_index(from_hex, to_hex, 4)
+        local index2 = (index + 2) % 4
+        if (index2 == 0) then index2 = 4 end
+
+        if (from_hex.y == to_hex.y) and (((from_hex.x - to_hex.x) % 2) == 0) then
+            if (from_hex.x > to_hex.x) then
+                return 'sw', 'se'
+            else
+                return 'se', 'sw'
+            end
+        else
+            return dirs[index], dirs[index2]
+        end
     end
 
     -- In principle, 'facing' can be modified directly. However, that only
