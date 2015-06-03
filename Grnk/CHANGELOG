@@ -1,3 +1,9 @@
+----- 2.0.2, 2 June 2015 (critical bug fix) -----
+
+- P2S3 Beasts: bug fix: reenable Grnk's magical spear on defense at scenario end
+- Tweak behavior of [adjust_facing] tag
+
+
 ----- 2.0.1, 30 May 2015 -----
 
 Part 1:
