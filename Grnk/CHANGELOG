@@ -1,3 +1,21 @@
+----- 2.0.3, 5 June 2015 -----
+
+Part 1:
+- P1S2 Shmaltupp: add a custom Lua AI for the villagers sides
+- P1S6 Hunting: use Big Animals Micro AI for the wolves
+
+Part 2:
+- P2S12 Alliance:
+  - Moving next to Karcyn is now sufficient for victory (as opposed to having
+    to land a strike)
+  - Make saurians allied with Karcyn
+- P2S15 Endgame/Showdown: significantly speed up scenario prestart event
+
+Both parts:
+- Set up all last breath and die events to play out correctly
+- Set save_id values for all sides that don't have one (for status table)
+
+
 ----- 2.0.2, 2 June 2015 (critical bug fix) -----
 
 - P2S3 Beasts: bug fix: reenable Grnk's magical spear on defense at scenario end
