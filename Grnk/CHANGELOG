@@ -1,3 +1,14 @@
+----- 2.0.4, 17 May 2016 -----
+
+Part 2:
+- P1S14 Submission:
+  - Bug fix: disable stored moves recording and replaying in Part d
+  - Bug fix: hide invisible side leader unit during Part b
+- Add mosquito attack and rabbit sprites from Shield
+- Minor modifications to rabbit unit stats
+- Invisible Unit: set movement to zero
+
+
 ----- 2.0.3, 5 June 2015 -----
 
 Part 1:
