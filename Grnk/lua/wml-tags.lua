@@ -141,11 +141,19 @@ function wesnoth.wml_actions.adjust_facing(cfg)
     local facing, second_facing = get_hex_facing({ x = unit.x, y = unit.y }, { x = second_unit.x, y = second_unit.y })
 
     unit.facing = facing
-    wesnoth.put_unit(unit.x, unit.y, unit)
+    if wesnoth.compare_versions(wesnoth.game_config.version, '>=', '1.13.2') then
+        wesnoth.put_unit(unit, unit.x, unit.y)
+    else
+        wesnoth.put_unit(unit.x, unit.y, unit)
+    end
 
     -- Both false and the empty string count as negatives here
     if ((not cfg.speaker_only) or (cfg.speaker_only == '')) then
         second_unit.facing = second_facing
-        wesnoth.put_unit(second_unit.x, second_unit.y, second_unit)
+        if wesnoth.compare_versions(wesnoth.game_config.version, '>=', '1.13.2') then
+            wesnoth.put_unit(second_unit, second_unit.x, second_unit.y)
+        else
+            wesnoth.put_unit(second_unit.x, second_unit.y, second_unit)
+        end
     end
 end
