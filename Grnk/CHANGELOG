@@ -1,3 +1,17 @@
+----- 2.0.5, 21 Nov 2016 -----
+
+This is a very minor update with only a couple player visible changes, to upload
+what I have done at this time for the UMC pack release.
+
+- Ox Cart:
+  - Use new sprite from Samonella
+  - Remove portrait from driverless carts
+- A couple very minor wording changes
+- P1S4 Mercenaries: fix loyal-unit defeat events
+- Some internal changes for making the campaign work in both 1.12 and 1.13, but
+  these are not finished yet
+
+
 ----- 2.0.4, 17 May 2016 -----
 
 Part 2:
