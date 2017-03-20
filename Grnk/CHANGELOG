@@ -1,3 +1,10 @@
+----- 2.0.6, 19 March 2017 -----
+
+- Added music playlists from Samonella
+- P2S6 Lizards: bug fix for lizard AI trying to move petrified units
+- A few internal code changes with no effect on behavior
+
+
 ----- 2.0.5, 21 Nov 2016 -----
 
 This is a very minor update with only a couple player visible changes, to upload
