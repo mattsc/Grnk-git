@@ -18,11 +18,11 @@ function ca_lizards:evaluation(ai)
 
     local units
     if wesnoth.get_variable('S') and wesnoth.get_variable('S.include_leader_S' .. wesnoth.current.side) then
-        units = wesnoth.get_units { side = wesnoth.current.side,
+        units = AH.get_live_units { side = wesnoth.current.side,
             formula = '$this_unit.moves > 0'
         }
     else
-        units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',
+        units = AH.get_live_units { side = wesnoth.current.side, canrecruit = 'no',
             formula = '$this_unit.moves > 0'
         }
     end
@@ -97,11 +97,11 @@ function ca_lizards:execution(ai)
 
     local units
     if wesnoth.get_variable('S') and wesnoth.get_variable('S.include_leader_S' .. wesnoth.current.side) then
-        units = wesnoth.get_units { side = wesnoth.current.side,
+        units = AH.get_live_units { side = wesnoth.current.side,
             formula = '$this_unit.moves > 0'
         }
     else
-        units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',
+        units = AH.get_live_units { side = wesnoth.current.side, canrecruit = 'no',
             formula = '$this_unit.moves > 0'
         }
     end
