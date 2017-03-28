@@ -746,7 +746,7 @@ return {
                 if show_debug then
                     local loc = gamedata.units[best_unit.id]
                     wesnoth.message('Best unit: ' .. best_unit.id .. ' at ' .. loc[1] .. ',' .. loc[2] .. ' --> ' .. best_hex[1] .. ',' .. best_hex[2] .. '  (rating=' .. max_rating .. ')')
-                    wesnoth.select_hex(best_hex[1], best_hex[2])
+                    --wesnoth.select_hex(best_hex[1], best_hex[2])
                 end
                 return best_unit, best_hex
             end
