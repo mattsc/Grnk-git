@@ -1,6 +1,8 @@
 local H = wesnoth.require "lua/helper.lua"
 local AH = wesnoth.require "ai/lua/ai_helper.lua"
 
+wesnoth.require "~/add-ons/Grnk/lua/set_CA_args.lua"
+
 local function get_dog(cfg)
     local dogs = AH.get_units_with_moves {
         side = wesnoth.current.side,
@@ -15,12 +17,16 @@ end
 
 local ca_dogs_move_no_more = {}
 
-function ca_dogs_move_no_more:evaluation(ai, cfg)
+function ca_dogs_move_no_more:evaluation(arg1, arg2)
+    local ai, cfg = set_CA_args(arg1, arg2)
+
     if get_dog(cfg) then return 299990 end
     return 0
 end
 
-function ca_dogs_move_no_more:execution(ai, cfg)
+function ca_dogs_move_no_more:execution(arg1, arg2)
+    local ai, cfg = set_CA_args(arg1, arg2)
+
     local dog = get_dog(cfg)
 
     AH.checked_stopunit_moves(ai, dog)

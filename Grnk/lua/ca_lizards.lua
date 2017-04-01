@@ -3,12 +3,16 @@ local W = H.set_wml_action_metatable {}
 local AH = wesnoth.require "ai/lua/ai_helper.lua"
 local LS = wesnoth.require "lua/location_set.lua"
 
+wesnoth.require "~/add-ons/Grnk/lua/set_CA_args.lua"
+
 local hold_area = {}
 local stored_y0
 
 local ca_lizards = {}
 
-function ca_lizards:evaluation(ai)
+function ca_lizards:evaluation(arg1)
+    local ai = set_CA_args(arg1)
+
     -- Have the AI form a line along y = 28 - 0.5 * x
     -- if there are no enemies on or south of the line y = 24 - 0.5 * x
     -- Otherwise we'll let the RCA AI do combat as usual,
@@ -92,7 +96,9 @@ function ca_lizards:evaluation(ai)
     return 90000
 end
 
-function ca_lizards:execution(ai)
+function ca_lizards:execution(arg1)
+    local ai = set_CA_args(arg1)
+
     --print('---- Executing hold_area ----')
 
     local units

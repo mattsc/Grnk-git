@@ -1,9 +1,13 @@
 local H = wesnoth.require "lua/helper.lua"
 local LS = wesnoth.require "lua/location_set.lua"
 
+wesnoth.require "~/add-ons/Grnk/lua/set_CA_args.lua"
+
 local ca_peasants_phorhoot = {}
 
-function ca_peasants_phorhoot:evaluation(ai)
+function ca_peasants_phorhoot:evaluation(arg1)
+    local ai = set_CA_args(arg1)
+
     -- This CA exclusively controls all peasants and boats
     local units = wesnoth.get_units {
         side = 2,
@@ -15,7 +19,9 @@ function ca_peasants_phorhoot:evaluation(ai)
     return 0
 end
 
-function ca_peasants_phorhoot:execution(ai)
+function ca_peasants_phorhoot:execution(arg1)
+    local ai = set_CA_args(arg1)
+
     -- First, all boats that don't have the 'loaded' variable set
     -- have their MP removed
     local boats = wesnoth.get_units {

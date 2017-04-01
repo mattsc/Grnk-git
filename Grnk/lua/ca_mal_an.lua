@@ -3,9 +3,13 @@ local W = H.set_wml_action_metatable {}
 local AH = wesnoth.require "ai/lua/ai_helper.lua"
 local LS = wesnoth.require "lua/location_set.lua"
 
+wesnoth.require "~/add-ons/Grnk/lua/set_CA_args.lua"
+
 local ca_mal_an = {}
 
-function ca_mal_an:evaluation(ai)
+function ca_mal_an:evaluation(arg1)
+    local ai = set_CA_args(arg1)
+
     -- Have the AI form a line along y = 0.5 * x
     -- Otherwise we'll let the RCA AI do combat as usual,
     -- but this CA takes over all movement other than combat
@@ -37,7 +41,9 @@ function ca_mal_an:evaluation(ai)
     return 90000
 end
 
-function ca_mal_an:execution(ai)
+function ca_mal_an:execution(arg1)
+    local ai = set_CA_args(arg1)
+
     --print('---- Executing hold_area ----')
 
     local units = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'no',

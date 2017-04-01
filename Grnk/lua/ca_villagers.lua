@@ -2,6 +2,8 @@ local H = wesnoth.require "lua/helper.lua"
 local AH = wesnoth.require "ai/lua/ai_helper.lua"
 local MAIUV = wesnoth.require "ai/micro_ais/micro_ai_unit_variables.lua"
 
+wesnoth.require "~/add-ons/Grnk/lua/set_CA_args.lua"
+
 local function get_villager()
     local villagers = AH.get_units_with_moves { side = wesnoth.current.side }
     return villagers[1]
@@ -9,12 +11,16 @@ end
 
 local ca_villagers = {}
 
-function ca_villagers:evaluation(ai)
+function ca_villagers:evaluation(arg1)
+    local ai = set_CA_args(arg1)
+
     if get_villager() then return 90000 end
     return 0
 end
 
-function ca_villagers:execution(ai)
+function ca_villagers:execution(arg1)
+    local ai = set_CA_args(arg1)
+
     -- This is a modified (much simplified) version of the Big Animals MAI.
     -- It only takes care of the wandering, does not need to avoid anybody
     -- and leaves attacks to the mainline AI.
