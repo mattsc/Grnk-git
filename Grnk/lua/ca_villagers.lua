@@ -63,7 +63,10 @@ function ca_villagers:execution(arg1)
 
     if (villager.x == goal.goal_x) and (villager.y == goal.goal_y) then
         --print('Removing villager at goal', villager.id, villager.x, villager.y, goal.goal_x, goal.goal_y)
-        local command = "wesnoth.put_unit(x1, y1)"
+        local command = "wesnoth.erase_unit(x1, y1)"
+        if wesnoth.compare_versions(wesnoth.game_config.version, '<', '1.13.2') then
+            command = "wesnoth.put_unit(x1, y1)"
+        end
         ai.synced_command(command, goal.goal_x, goal.goal_y)
     end
 end

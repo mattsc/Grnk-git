@@ -131,7 +131,11 @@ function ca_lizards:execution(arg1)
         -- Put the other units back out there
         for j,u2 in ipairs(units) do
             if (u2.x ~= u.x) or (u2.y ~= u.y) then
-                wesnoth.put_unit(u2.x, u2.y, u2)
+                if wesnoth.compare_versions(wesnoth.game_config.version, '>=', '1.13.2') then
+                    wesnoth.put_unit(u2, u2.x, u2.y)
+                else
+                    wesnoth.put_unit(u2.x, u2.y, u2)
+                end
             end
         end
 
