@@ -8,7 +8,7 @@ function wesnoth.wml_actions.dialog_message(cfg)
     wesnoth.delay(20)
 
     if wesnoth.compare_versions(wesnoth.game_config.version, '>=', '1.13.2') then
-        wesnoth.show_popup_dialog(message)
+        wesnoth.show_popup_dialog("", message)
     else
         local helper = wesnoth.require "lua/helper.lua"
         local T = helper.set_wml_tag_metatable {}
