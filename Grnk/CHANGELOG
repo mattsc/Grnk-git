@@ -1,3 +1,31 @@
+----- 2.1.0, 18 March 2018 (port Part 1 to Wesnoth 1.14) -----
+
+- Ensure that Part 1 works without errors in Wesnoth 1.14
+  - This consists of many internal, under-the-hood changes
+  - Tested on 1.13.12 - 1.13.14 (1.14 RC 1 - 1.14 RC 3)
+  - It also still works on 1.12. Older version are not supported any more.
+  - Part 2 is not done yet and does not work in 1.14. It is therefore disabled
+    in this release. To be updated soon.
+- Changes affecting balance
+  - P1S1 Flight: make length of mountain passage dependent on difficulty
+  - P1S5 Shadows: increase turn limit
+  - P1S8 Trap: make second part of scenario somewhat easier
+  - P1S12 Prunes: trigger message about prunes earlier
+- Other potentially player visible changes
+  - P1S2 Shmaltupp: don't trigger assassin on Turn 1
+  - P1S3 Mercenaries: don't trigger ogre message if Grnk has already left
+  - P1S5 Shadows, P1S7 Disillusion: fix bugs that made it impossible to end the
+    scenarios under rare circumstances
+  - P1S8 Trap: AI units should not grab villages in second part
+  - P1S9 Chaos: remove left-over units from Grnk's recall list
+  - P1S11 Escape: trigger lurker message also when moving next to a lurker
+  - P1S13 Wizards: fix enemies not always being fully healed when they appear
+  - Minor changes to wording, display/animations, triggers for some events
+    (specifically some moveto events were changed to enter_hex events)
+- Other changes
+  - P1S7 Disillusion: Add error message if scenario ends without Vanak
+
+
 ----- 2.0.6, 19 March 2017 -----
 
 - Added music playlists from Samonella
