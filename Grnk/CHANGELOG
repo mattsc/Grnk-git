@@ -1,3 +1,38 @@
+----- 2.2.0, 18 March 2018 (port Part 2 to Wesnoth 1.14) -----
+
+a43debcd2b6a3f314dcc0c73c0e871270c4b7b1d
+
+- Ensure that Part 2 works without errors in Wesnoth 1.14
+  - This consists of many internal, under-the-hood changes
+  - Tested on 1.13.12 (1.14 RC 1) - 1.14.0
+  - It also still works on 1.12. Older version are not supported any more.
+- Changes affecting balance and other potentially player visible changes
+  - P2S1: rename scenario Intervention -> Prelude
+  - P2S02 Blockade: increase aggression of Phorhoot troops
+  - P2S3 Beasts:
+    - Add scorpions
+    - Make turn limit the same on all difficulties
+    - Slight change to dog attack stats
+  - P2S4 Cart:
+    - Make troll leader more aggressive
+    - Trolls no longer ignore lurkers
+  - P2S5 Fred: remove Fred AI from scenario (for now) and adjust enemy gold
+  - P2S8 Converted: make scenario slightly easier
+  - P2S10 Impasse: add more gold for player
+  - P2S13 Lockout: let Karcyn attack adjacent units
+  - P2S13 - 15: make goblin recall cost unit specific in 1.13
+  - P2S15b Showdown:
+    - Enable recalling trolls for Rok
+    - Ensure that Langzight does not recall trolls
+    - Move Master appearing closer to Grossauba
+  - Prunes:
+    - Have prunes teleport to an area, not a single hex
+    - Add images to prunes advancements menu options
+  - Minor changes to wording, display/animations, event sequences etc.
+- Other changes
+  - P2S2 Blockade: use mainline Bottleneck Micro AI
+
+
 ----- 2.1.0, 18 March 2018 (port Part 1 to Wesnoth 1.14) -----
 
 - Ensure that Part 1 works without errors in Wesnoth 1.14
