@@ -1,6 +1,4 @@
------ 2.2.0, 18 March 2018 (port Part 2 to Wesnoth 1.14) -----
-
-a43debcd2b6a3f314dcc0c73c0e871270c4b7b1d
+----- 2.2.0, 30 April 2018 (port Part 2 to Wesnoth 1.14) -----
 
 - Ensure that Part 2 works without errors in Wesnoth 1.14
   - This consists of many internal, under-the-hood changes
@@ -12,7 +10,7 @@ a43debcd2b6a3f314dcc0c73c0e871270c4b7b1d
   - P2S3 Beasts:
     - Add scorpions
     - Make turn limit the same on all difficulties
-    - Slight change to dog attack stats
+    - Small change to dog attack stats
   - P2S4 Cart:
     - Make troll leader more aggressive
     - Trolls no longer ignore lurkers
