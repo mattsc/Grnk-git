@@ -31,7 +31,7 @@
   - P2S2 Blockade: use mainline Bottleneck Micro AI
 
 
------ 2.1.0, 18 March 2018 (port Part 1 to Wesnoth 1.14) -----
+----- 2.1.0, 18 April 2018 (port Part 1 to Wesnoth 1.14) -----
 
 - Ensure that Part 1 works without errors in Wesnoth 1.14
   - This consists of many internal, under-the-hood changes
